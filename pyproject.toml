@@ -12,4 +12,4 @@ Repository = "https://github.com/MarwanDSAI/comfyui-marnodes"
 [tool.comfy]
 PublisherId = "marwandsai"
 DisplayName = "comfyui-marnodes"
-Icon = "https://raw.githubusercontent.com/MarwanDSAI/marwan-nodes/main/images/marnodes-logo-400.png"
+Icon = "https://raw.githubusercontent.com/MarwanDSAI/comfyui-marnodes/main/images/logo-400.png"
