@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="slateGrad" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#32363e"/>
+      <stop offset="100%" stop-color="#16181b"/>
+    </radialGradient>
+
+    <!-- Main Node Gradients (Isometric Cube) -->
+    <linearGradient id="topFace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c525f"/>
+      <stop offset="100%" stop-color="#353942"/>
+    </linearGradient>
+
+    <linearGradient id="leftFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c3038"/>
+      <stop offset="100%" stop-color="#1e2025"/>
+    </linearGradient>
+
+    <linearGradient id="rightFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22252c"/>
+      <stop offset="100%" stop-color="#15171a"/>
+    </linearGradient>
+
+    <!-- Satellite Node Gradient -->
+    <linearGradient id="satGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2e36"/>
+      <stop offset="100%" stop-color="#181a1e"/>
+    </linearGradient>
+
+    <!-- AI/Neural Cyan to Emerald Glow -->
+    <linearGradient id="cyanGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <!-- Neural Purple to Magenta Glow -->
+    <linearGradient id="magentaGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f72585"/>
+      <stop offset="100%" stop-color="#7209b7"/>
+    </linearGradient>
+
+    <!-- Amber Logic Glow -->
+    <linearGradient id="amberGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="100%" stop-color="#fb8500"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="neonBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="cubeShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="512" height="512" rx="112" fill="url(#slateGrad)"/>
+  <rect width="508" height="508" x="2" y="2" rx="110" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2"/>
+
+  <!-- 2. Workflow Mesh / Graph Background Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1.5">
+    <line x1="84" y1="126" x2="256" y2="228"/>
+    <line x1="428" y1="126" x2="256" y2="228"/>
+    <line x1="84" y1="334" x2="256" y2="228"/>
+    <line x1="428" y1="334" x2="256" y2="228"/>
+  </g>
+
+  <!-- 3. Intelligent Workflow Bus Lines (Curved Synapses) -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Synapse: Upper-Left Satellite to Core -->
+    <path d="M 84 126 C 140 126, 170 190, 218 198" stroke="#00f2fe" stroke-width="2.5" stroke-dasharray="4,4" filter="url(#neonBlur)"/>
+    
+    <!-- Synapse: Lower-Left Satellite to Core -->
+    <path d="M 84 334 C 140 334, 170 270, 218 276" stroke="#4facfe" stroke-width="2.5" filter="url(#neonBlur)"/>
+    
+    <!-- Synapse: Core to Upper-Right Satellite -->
+    <path d="M 294 206 C 342 206, 370 126, 428 126" stroke="#f72585" stroke-width="2.5" stroke-dasharray="4,4" filter="url(#neonBlur)"/>
+
+    <!-- Synapse: Core to Lower-Right Satellite -->
+    <path d="M 294 284 C 342 284, 370 334, 428 334" stroke="#ffb703" stroke-width="2.5" filter="url(#neonBlur)"/>
+  </g>
+
+  <!-- 4. Satellite Nodes (Perception, Latent, Logic, Output) -->
+  <!-- Top Left: Input / Vision Sub-node -->
+  <g filter="url(#cubeShadow)">
+    <rect x="52" y="96" width="64" height="60" rx="14" fill="url(#satGrad)" stroke="#00f2fe" stroke-width="1.5"/>
+    <circle cx="84" cy="126" r="6" fill="#00f2fe" filter="url(#neonBlur)"/>
+    <circle cx="84" cy="126" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Bottom Left: Conditioning / Embed Sub-node -->
+  <g filter="url(#cubeShadow)">
+    <rect x="52" y="304" width="64" height="60" rx="14" fill="url(#satGrad)" stroke="#4facfe" stroke-width="1.5"/>
+    <circle cx="84" cy="334" r="6" fill="#4facfe" filter="url(#neonBlur)"/>
+    <circle cx="84" cy="334" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Top Right: Latent / Model Sub-node -->
+  <g filter="url(#cubeShadow)">
+    <rect x="396" y="96" width="64" height="60" rx="14" fill="url(#satGrad)" stroke="#f72585" stroke-width="1.5"/>
+    <circle cx="428" cy="126" r="6" fill="#f72585" filter="url(#neonBlur)"/>
+    <circle cx="428" cy="126" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Bottom Right: VAE / Output Sub-node -->
+  <g filter="url(#cubeShadow)">
+    <rect x="396" y="304" width="64" height="60" rx="14" fill="url(#satGrad)" stroke="#ffb703" stroke-width="1.5"/>
+    <circle cx="428" cy="334" r="6" fill="#ffb703" filter="url(#neonBlur)"/>
+    <circle cx="428" cy="334" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- 5. Main Processing Core (Central MDS Node) -->
+  <g filter="url(#cubeShadow)">
+    <!-- Top Face -->
+    <polygon points="256,76 370,140 256,204 142,140" fill="url(#topFace)" stroke="#5d6473" stroke-width="1.5"/>
+    <!-- Left Face -->
+    <polygon points="142,140 256,204 256,334 142,270" fill="url(#leftFace)" stroke="#424752" stroke-width="1.5"/>
+    <!-- Right Face -->
+    <polygon points="256,204 370,140 370,270 256,334" fill="url(#rightFace)" stroke="#353941" stroke-width="1.5"/>
+
+    <!-- Inset Panels -->
+    <polygon points="256,102 336,148 256,192 176,148" fill="#181a1e" stroke="#4a505b" stroke-width="1.2"/>
+    <polygon points="160,160 238,204 238,304 160,260" fill="#141619" stroke="#353941" stroke-width="1.2"/>
+    <polygon points="274,204 352,160 352,260 274,304" fill="#111215" stroke="#2c3038" stroke-width="1.2"/>
+  </g>
+
+  <!-- 6. Stylized Neural MDS Graph Overlay -->
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left Inset 'M' Synapse Path -->
+    <path d="M 178 248 L 178 180 L 199 212 L 220 180 L 220 248" 
+          fill="none" 
+          stroke="url(#cyanGlowGrad)" 
+          stroke-width="4.5" 
+          filter="url(#neonBlur)"/>
+    <path d="M 178 248 L 178 180 L 199 212 L 220 180 L 220 248" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.5"/>
+
+    <!-- Right Inset 'S' Logic Flow -->
+    <path d="M 334 186 L 292 212 L 334 238 L 292 264" 
+          fill="none" 
+          stroke="url(#magentaGlowGrad)" 
+          stroke-width="4.5" 
+          filter="url(#neonBlur)"/>
+    <path d="M 334 186 L 292 212 L 334 238 L 292 264" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.5"/>
+
+    <!-- Top Inset 'D' Brain Loop -->
+    <path d="M 232 134 L 268 114 C 288 126 288 150 268 162 L 232 142 Z" 
+          fill="none" 
+          stroke="#00f2fe" 
+          stroke-width="2.5" 
+          stroke-opacity="0.85"/>
+  </g>
+
+  <!-- Central Processing Core Nucleus -->
+  <circle cx="256" cy="204" r="5" fill="#ffffff" filter="url(#neonBlur)"/>
+  <circle cx="256" cy="204" r="9" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- 7. Primary Brand Badge: MDS NODE -->
+  <g filter="url(#cubeShadow)">
+    <rect x="136" y="396" width="240" height="46" rx="12" fill="#181a1e" stroke="#3e434d" stroke-width="1.5"/>
+    
+    <!-- AI Status Indicator -->
+    <circle cx="162" cy="419" r="4.5" fill="#00f2fe" filter="url(#neonBlur)"/>
+    
+    <!-- Title Text -->
+    <text x="260" y="426" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16" letter-spacing="3.5" text-anchor="middle">MDS NODE</text>
+    
+    <!-- Trailing Pulse Dot -->
+    <circle cx="350" cy="419" r="3.5" fill="#f72585" filter="url(#neonBlur)"/>
+  </g>
+</svg>
