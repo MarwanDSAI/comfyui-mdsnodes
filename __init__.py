@@ -3,9 +3,9 @@
 # -------------------------------------------------------
 # Central node registration for the Marwan Custom Nodes package.
 # -------------------------------------------------------
-from .nodes.UNetNameToCKPTName import (UNetNameToCKPTName)
-from .nodes.ControlNetSelect import (MarControlNetSelect)
-from .nodes.RatioList import (MarwanRatioListNode)
+from .nodes.UNetNameToCKPTName import UNetNameToCKPTName
+from .nodes.ControlNetSelect import MarControlNetSelect
+from .nodes.RatioList import MarwanRatioListNode
 
 NODE_CLASS_MAPPINGS = {
     "UNETNameToCkptName": UNetNameToCKPTName,
