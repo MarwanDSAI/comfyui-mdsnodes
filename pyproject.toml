@@ -2,7 +2,7 @@
 name = "comfyui-mdsnodes"
 description = "Custom Nodes for The Ultimate Model Tester Workflow"
 version = "1.0"
-license = { text = "MIT License" }
+license = { file = "LICENSE" }
 dependencies  = []
 
 [project.urls]
