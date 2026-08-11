@@ -11,5 +11,5 @@ Repository = "https://github.com/MarwanDSAI/comfyui-mnodes"
 
 [tool.comfy]
 PublisherId = "marwandsai"
-DisplayName = "MarNodes"
+DisplayName = "ComfyUI-MarNodes"
 Icon = "https://raw.githubusercontent.com/MarwanDSAI/comfyui-marnodes/main/images/logo-400.png"
