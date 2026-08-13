@@ -1,22 +1,22 @@
-# Marwan Custom Nodes Version 1.1.2
+# Marwan Custom Nodes Version 1.0
 # ComfyUI Custom Nodes for The Ultimate Model Tester Workflow
 # -------------------------------------------------------
 # Central node registration for the package.
 # -------------------------------------------------------
-from .nodes.UNetNameToCKPTName import UNetNameToCKPTName
+from .nodes.UNetNameToCKPTName import MarUNetNameToCKPTName
 from .nodes.ControlNetSelect import MarControlNetSelect
 from .nodes.RatioCombobox import MarRatioCombobox
 # -------------------------------------------------------
 # Map internal unique string IDs to Python classes
 NODE_CLASS_MAPPINGS = {
-    "UNetNameToCKPTName": UNetNameToCKPTName,
+    "MarUNetNameToCKPTName": MarUNetNameToCKPTName,
     "MarControlNetSelect": MarControlNetSelect,
     "MarRatioCombobox": MarRatioCombobox,
 }
 # -------------------------------------------------------
 # Map internal string IDs to the friendly titles shown on the canvas
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "UNetNameToCKPTName": "UNET To CKPT Converter",
+    "MarUNetNameToCKPTName": "UNET To CKPT Converter",
     "MarControlNetSelect": "ControlNet Select",
     "MarRatioCombobox": "Ratio Combobox",
 }
