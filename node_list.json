@@ -1,0 +1,7 @@
+{
+  "ComfyUI-MDSNodes": [
+    "MarUNetNameToCKPTName",
+    "MarControlNetSelect",
+    "MarRatioCombobox"
+  ]
+}
