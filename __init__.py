@@ -5,20 +5,20 @@
 # -------------------------------------------------------
 from .nodes.UNetNameToCKPTName import UNetNameToCKPTName
 from .nodes.ControlNetSelect import MarControlNetSelect
-from .nodes.RatioList import MarwanRatioListNode
+from .nodes.RatioCombobox import MarRatioCombobox
 # -------------------------------------------------------
 # Map internal unique string IDs to Python classes
 NODE_CLASS_MAPPINGS = {
     "UNETNameToCkptName": UNetNameToCKPTName,
     "MarControlNetSelect": MarControlNetSelect,
-    "MarwanRatioListNode": MarwanRatioListNode,
+    "MarRatioCombobox": MarRatioCombobox,
 }
 # -------------------------------------------------------
 # Map internal string IDs to the friendly titles shown on the canvas
 NODE_DISPLAY_NAME_MAPPINGS = {
     "UNETNameToCkptName": "UNET To CKPT Converter",
     "MarControlNetSelect": "ControlNet Select",
-    "MarwanRatioListNode": "Ratio List Node",
+    "MarRatioCombobox": "Ratio Combobox",
 }
 # -------------------------------------------------------
 # Expose the mappings so ComfyUI can register the nodes upon server startup
