@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-mdsnodes"
 description = "Custom Nodes for The Ultimate Model Tester Workflow"
-version = "1.0.0"
+version = "1.0.1"
 license = { file = "LICENSE" }
 dependencies  = []
 
