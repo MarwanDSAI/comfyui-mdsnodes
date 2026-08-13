@@ -1,7 +1,7 @@
 # Marwan Custom Nodes
 # UNET Name to CKPT_NAME
 # -------------------------------------------------------
-class UNetNameToCKPTName:
+class MarUNetNameToCKPTName:
     # Main Node Description (Shows in search dialog and "Node Info" panel)
     DESCRIPTION = "allows to use a UNET model name as a ckpt_name input for RGTHREE_CONTEXT."
     # --------------------------
