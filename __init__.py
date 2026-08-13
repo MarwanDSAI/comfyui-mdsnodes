@@ -9,14 +9,14 @@ from .nodes.RatioCombobox import MarRatioCombobox
 # -------------------------------------------------------
 # Map internal unique string IDs to Python classes
 NODE_CLASS_MAPPINGS = {
-    "UNETNameToCkptName": UNetNameToCKPTName,
+    "UNetNameToCKPTName": UNetNameToCKPTName,
     "MarControlNetSelect": MarControlNetSelect,
     "MarRatioCombobox": MarRatioCombobox,
 }
 # -------------------------------------------------------
 # Map internal string IDs to the friendly titles shown on the canvas
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "UNETNameToCkptName": "UNET To CKPT Converter",
+    "UNetNameToCKPTName": "UNET To CKPT Converter",
     "MarControlNetSelect": "ControlNet Select",
     "MarRatioCombobox": "Ratio Combobox",
 }
