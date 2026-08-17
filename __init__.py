@@ -1,4 +1,4 @@
-# Marwan Custom Nodes Version 1.0
+# Marwan Custom Nodes
 # ComfyUI Custom Nodes for The Ultimate Model Tester Workflow
 # -------------------------------------------------------
 # Central node registration for the package.
