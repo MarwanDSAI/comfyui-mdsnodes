@@ -1,8 +1,6 @@
 # Marwan Custom Nodes
 # ComfyUI Custom Nodes for The Ultimate Model Tester Workflow
 # -------------------------------------------------------
-# Central node registration for the package.
-# -------------------------------------------------------
 from .nodes.UNetNameToCKPTName import MarUNetNameToCKPTName
 from .nodes.ControlNetSelect import MarControlNetSelect
 from .nodes.RatioCombobox import MarRatioCombobox
