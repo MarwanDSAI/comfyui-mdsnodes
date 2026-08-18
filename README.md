@@ -1,4 +1,4 @@
-## Marwan Custom Nodes V1.0.8
+## Marwan Custom Nodes V1.0.9
 
 the following custom nodes was build to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
 
