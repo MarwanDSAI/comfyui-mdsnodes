@@ -1,5 +1,5 @@
 ## Marwan Custom Nodes
-
+V1.0.8
 the following custom nodes was build to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
 
 - **Load Image (With Path)** 
@@ -21,5 +21,5 @@ the following custom nodes was build to use with my Ultimate Model Tester Workfl
   Dropdown of common percentage presets (10%, 25%, 50%, 100%) converted directly into decimal FLOAT values (e.g., 0.5).
 
 
-## Requirements:
+### Requirements:
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
