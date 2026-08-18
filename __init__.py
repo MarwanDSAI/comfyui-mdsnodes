@@ -8,7 +8,7 @@
 @description: Custom Nodes for The Ultimate Model Tester Workflow
 """
 # -------------------------------------------------------
-version_code = [1, 0, 6]
+version_code = [1, 0, 7]
 version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if len(version_code) > 2 else '')
 logging.info(f"### Loading: ComfyUI-MDSNodes ({version_str})")
 # -------------------------------------------------------
