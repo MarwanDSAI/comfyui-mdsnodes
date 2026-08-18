@@ -1,6 +1,6 @@
 # Marwan Custom Nodes
 
-I built the following custom nodes to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
+the following custom nodes was build to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
 
 ControlNet Select:
 ----------------- 
