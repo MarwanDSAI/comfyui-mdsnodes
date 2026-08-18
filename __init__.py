@@ -2,7 +2,7 @@
 # ComfyUI Custom Nodes for The Ultimate Model Tester Workflow
 # -------------------------------------------------------
 """
-@author: Marwan
+@author: MarwanDSAI
 @title: ComfyUI-MDSNodes
 @nickname: ComfyUI-MDSNodes
 @description: Custom Nodes for The Ultimate Model Tester Workflow
