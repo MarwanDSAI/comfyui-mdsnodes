@@ -1,32 +1,25 @@
-# Marwan Custom Nodes
+## Marwan Custom Nodes
 
 the following custom nodes was build to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
 
-ControlNet Select:
------------------ 
-This node allows you to easily select a ControlNet model name and connect it directly to the Load ControlNet Model node.
+- **Load Image (With Path)** 
+  Loads an image and outputs its decoded IMAGE, MASK, filename, full_path, and directory.
 
-Features:
-Select the ControlNet model from a dropdown list.
-Outputs the selected ControlNet model name as a string.
-The string output can be used to store the ControlNet name in the metadata of generated images.
+- **Top Upscale Models Selector (Auto-DL)** 
+  Selects top upscale models (e.g., 4x-UltraSharp, 4xRealWebPhoto) and auto-downloads missing files when queued.
 
-Ratio List Node:
----------------- 
-A simple node that provides an easy way to select from predefined aspect ratios.
+- **ControlNet Select** 
+  Selects a ControlNet model and outputs its filename as both a standard string and a wildcard/combo connection.
 
-Features:
+- **Select Diffusion Model** 
+  Selects a UNET/Diffusion model and passes its filename as CKPT_NAME and UNET_NAME (useful for context routing).
 
-Choose from a list of commonly used percentage/ratio values.
-Connect the output directly to any node that accepts ratio input.
-Helps simplify workflow setup without manually entering values.
+- **UNet Name to CKPT Name** 
+  Routes a UNET model filename into nodes expecting CKPT_NAME (such as rgthree context nodes).
 
-UNET To CKPT Converter:
------------------------
-this node allows you to use a UNET model name as a ckpt_name input for RGTHREE_CONTEXT.
+- **Ratio Combobox**
+  Dropdown of common percentage presets (10%, 25%, 50%, 100%) converted directly into decimal FLOAT values (e.g., 0.5).
 
-Features:
 
-Converts UNET model selection into a format compatible with ckpt_name inputs.
-Useful for workflows that require model switching or compatibility with rgthree nodes.   
-   
+## Requirements:
+No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
