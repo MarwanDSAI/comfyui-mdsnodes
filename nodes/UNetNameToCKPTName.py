@@ -26,7 +26,7 @@ class MarUNetNameToCKPTName:
     OUTPUT_TOOLTIPS = ("The selected model filename passed forward as a string/universal data stream.",)
     
     FUNCTION = "get_name"
-    CATEGORY = "MDSNodes/utils/text"
+    CATEGORY = "MDSNodes/text"
 
     def get_name(self, unet_name):
         return (unet_name,)

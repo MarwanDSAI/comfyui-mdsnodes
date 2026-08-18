@@ -21,7 +21,7 @@ class MarRatioCombobox:
         }
 
     # This sets the header title of the node
-    TITLE = "Marwan Ratio List"
+    TITLE = "Ratio Combobox"
     
     RETURN_TYPES = ("FLOAT",)
     RETURN_NAMES = ("ratio_float",)
@@ -32,7 +32,7 @@ class MarRatioCombobox:
     )
 
     FUNCTION = "make"
-    CATEGORY = "MDSNodes/utils/FLOAT"
+    CATEGORY = "MDSNodes/FLOAT"
 
     # The argument here MUST match the key "ratio" exactly
     def make(self, ratio):
