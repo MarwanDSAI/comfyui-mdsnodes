@@ -1,4 +1,4 @@
-## Marwan Custom Nodes V1.0.9
+## ComfyUI-MDSNodes V1.0.9
 
 the following custom nodes was build to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
 
@@ -27,4 +27,4 @@ the following custom nodes was build to use with my Ultimate Model Tester Workfl
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
 
 ## How To Install?
-Install via ComfyUI Node Manager: Search 'mdsnodes' in ComfyUI Node Manager and click Install button.
+Install via ComfyUI Node Manager: Search 'ComfyUI-MDSNodes' in ComfyUI Node Manager and click Install button.
