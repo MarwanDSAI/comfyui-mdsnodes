@@ -22,6 +22,8 @@ the following custom nodes was build to use with my Ultimate Model Tester Workfl
 - **Ratio Combobox**
   Dropdown of common percentage presets (10%, 25%, 50%, 100%) converted directly into decimal FLOAT values (e.g., 0.5).
 
+- **Central parameter hub**
+configures and routes checkpoint, steps, refiner steps, CFG, sampler algorithm, scheduler curve, and denoise values across workflows.
 
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
@@ -30,6 +32,6 @@ No extra packages required. Works out-of-the-box with standard ComfyUI dependenc
 Install via ComfyUI Node Manager: Search `ComfyUI-MDSNodes` in ComfyUI Node Manager and click Install button.
 
 ## Version History
-v1.0.3 first puplic release
+__v1.0.3__ first puplic release
 
-v1.0.9 Added Nodes: Top Upscale Models Selector (Auto-DL), Select Diffusion Model, Load Image (With Path)
+__v1.0.9__  Node Added: Top Upscale Models Selector (Auto-DL), Select Diffusion Model, Load Image (With Path),Central parameter hub
