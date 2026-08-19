@@ -2,6 +2,8 @@
 
 the following custom nodes was build to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
 
+## Nodes:
+
 - **Load Image (With Path)** 
   Loads an image and outputs its decoded IMAGE, MASK, filename, full_path, and directory.
 
