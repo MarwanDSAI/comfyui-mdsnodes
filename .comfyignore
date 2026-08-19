@@ -1,0 +1,4 @@
+# Development-only assets
+docs/
+tests/
+.github/
