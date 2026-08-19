@@ -2,7 +2,7 @@
 
 the following custom nodes was build to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
 
-## Nodes:
+## Nodes
 
 - **Load Image (With Path)** 
   Loads an image and outputs its decoded IMAGE, MASK, filename, full_path, and directory.
@@ -23,7 +23,7 @@ the following custom nodes was build to use with my Ultimate Model Tester Workfl
   Dropdown of common percentage presets (10%, 25%, 50%, 100%) converted directly into decimal FLOAT values (e.g., 0.5).
 
 
-## Requirements:
+## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
 
 ## How To Install?
