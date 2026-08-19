@@ -1,4 +1,4 @@
-## ComfyUI-MDSNodes V1.0.10
+## ComfyUI-MDSNodes
 
 the following custom nodes was build to use with my Ultimate Model Tester Workflow. They may also be useful for your own workflows.
 
