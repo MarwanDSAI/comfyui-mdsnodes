@@ -1,5 +1,4 @@
-    # Marwan Custom Nodes
-# ComfyUI Custom Nodes for The Ultimate Model Tester Workflow
+# Marwan ComfyUI Custom Nodes for The Ultimate Model Tester Workflow
 # -----------------------------------------------------------
 """
 @author: MarwanDSAI
