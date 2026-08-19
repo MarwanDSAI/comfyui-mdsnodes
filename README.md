@@ -23,3 +23,6 @@ the following custom nodes was build to use with my Ultimate Model Tester Workfl
 
 ## Requirements:
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
+
+## How To Install?
+Install via ComfyUI Node Manager: Search 'mdsnodes' in ComfyUI Node Manager and click Install button.
