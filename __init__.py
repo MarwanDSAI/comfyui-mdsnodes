@@ -47,7 +47,7 @@ try:
     import cm_global
     cm_global.register_extension('ComfyUI-MDSNodes',
                                  {'version': version_code,
-                                  'name': 'ComfyUI-MDSNodes',
+                                  'name': 'comfyui-mdsnodes',
                                   'nodes': set(NODE_CLASS_MAPPINGS.keys()),
                                   'description': 'Custom Nodes for The Ultimate Model Tester Workflow', })
 except Exception:
