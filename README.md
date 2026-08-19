@@ -28,3 +28,7 @@ No extra packages required. Works out-of-the-box with standard ComfyUI dependenc
 
 ## How To Install?
 Install via ComfyUI Node Manager: Search `ComfyUI-MDSNodes` in ComfyUI Node Manager and click Install button.
+
+## Version History?
+v1.0.3 first puplic release
+v1.0.9 Added Nodes: Top Upscale Models Selector (Auto-DL), Select Diffusion Model, Load Image (With Path)
