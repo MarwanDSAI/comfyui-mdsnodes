@@ -9,7 +9,7 @@
 """
 # -----------------------------------------------------------
 import logging
-version_code = [1, 0, 11]
+version_code = [1, 0, 9]
 version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if len(version_code) > 2 else '')
 logging.info(f"### Loading: ComfyUI-MDSNodes ({version_str})")
 # -----------------------------------------------------------
