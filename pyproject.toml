@@ -1,5 +1,5 @@
 [project]
-name = "ComfyUI-MDSNodes"
+name = "comfyui-mdsnodes"
 description = "Custom Nodes for The Ultimate Model Tester Workflow"
 version = "1.0.9"
 license = { file = "LICENSE" }
