@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-mdsnodes"
-version = "1.0.11"
+version = "1.0.12"
 description = "A collection of lightweight utility nodes for workflow automation and model routing."
 authors = [{ name = "Marwan"}]
 readme = "README.md"
@@ -11,7 +11,14 @@ keywords = ["comfyui", "custom-nodes", "utilities"]
 Repository = "https://github.com/MarwanDSAI/comfyui-mdsnodes"
 Homepage = "https://github.com/MarwanDSAI/comfyui-mdsnodes"
 
+
 [tool.comfy]
 PublisherId = "marwandsai"
 DisplayName = "ComfyUI-MDSNodes"
 Icon = "https://raw.githubusercontent.com/MarwanDSAI/comfyui-mdsnodes/main/images/logo.svg"
+
+# Required because your python files live inside the "nodes" subfolder
+includes = [
+    "nodes",
+    "*.json"
+]
