@@ -24,7 +24,8 @@ the following custom nodes was build to use with The Ultimate Model Tester Workf
 
 - **Central parameter hub**
 configures and routes checkpoint, steps, refiner steps, CFG, sampler algorithm, scheduler curve, and denoise values across workflows.
-<img src="images/Node_Central parameter hub.png" width="250">
+
+  <img src="images/Node_Central parameter hub.png" alt="Central parameter hub" width="250">
 
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
