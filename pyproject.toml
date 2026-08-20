@@ -1,13 +1,15 @@
 [project]
 name = "comfyui-mdsnodes"
-description = "Custom Nodes for The Ultimate Model Tester Workflow"
 version = "1.0.11"
-license = { file = "LICENSE" }
-dependencies  = []
+description = "A collection of lightweight utility nodes for workflow automation and model routing."
+authors = [{ name = "Marwan"}]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["comfyui", "custom-nodes", "utilities"]
 
 [project.urls]
 Repository = "https://github.com/MarwanDSAI/comfyui-mdsnodes"
-#  Used by Comfy Registry https://comfyregistry.org
+Homepage = "https://github.com/MarwanDSAI/comfyui-mdsnodes"
 
 [tool.comfy]
 PublisherId = "marwandsai"
