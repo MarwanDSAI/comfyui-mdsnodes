@@ -19,6 +19,5 @@ Icon = "https://raw.githubusercontent.com/MarwanDSAI/comfyui-mdsnodes/main/image
 
 # Required because your python files live inside the "nodes" subfolder
 includes = [
-    "nodes",
-    "*.json"
+    "**/*"
 ]
