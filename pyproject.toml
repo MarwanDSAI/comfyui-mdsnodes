@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-mdsnodes"
-version = "1.0.12"
+version = "1.0.13"
 description = "A collection of lightweight utility nodes for workflow automation and model routing."
 authors = [{ name = "Marwan"}]
 readme = "README.md"
