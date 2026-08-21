@@ -1,7 +1,7 @@
 # Marwan ComfyUI Custom Nodes
 # -----------------------------------------------------------
 import logging
-version_code = [1, 0, 13]
+version_code = [1, 0, 14]
 version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if len(version_code) > 2 else '')
 logging.info(f"Loading: ComfyUI-MDSNodes ({version_str})")
 # -----------------------------------------------------------
@@ -13,6 +13,7 @@ from .nodes.SelectDiffusionModel import MarSelectDiffusionModel
 from .nodes.TopUpscaleModelsSelector import MarTopUpscaleModelsSelector
 from .nodes.GenParamSelector import MarGenParamSelector
 from .nodes.LoadCheckpointHubPro import MarLoadCheckpointHubPro
+from .nodes.LoadDiffusionHubPro import MarLoadDiffusionHubPro
 # -----------------------------------------------------------
 # Map internal unique string IDs to Python classes
 NODE_CLASS_MAPPINGS = {
@@ -24,6 +25,7 @@ NODE_CLASS_MAPPINGS = {
     "MarTopUpscaleModelsSelector": MarTopUpscaleModelsSelector,
     "MarGenParamSelector": MarGenParamSelector,
     "MarLoadCheckpointHubPro": MarLoadCheckpointHubPro,
+    "MarLoadDiffusionHubPro": MarLoadDiffusionHubPro,
 }
 # -----------------------------------------------------------
 # Map internal string IDs to the friendly titles shown on the canvas
@@ -36,6 +38,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MarTopUpscaleModelsSelector": "Top Upscale Models Selector (Auto-DL)",
     "MarGenParamSelector": "Generation Parameters Hub",
     "MarLoadCheckpointHubPro": "Load Checkpoint Hub Pro",
+    "MarLoadDiffusionHubPro": "Load Diffusion Model Hub Pro",
 }
 # -------------------------------------------------------
 # Expose the mappings so ComfyUI can register the nodes upon server startup
