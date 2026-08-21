@@ -5,6 +5,7 @@ description = "A collection of lightweight utility nodes for workflow automation
 authors = [{ name = "Marwan"}]
 readme = "README.md"
 license = { text = "MIT" }
+dependencies = []
 keywords = ["comfyui", "custom-nodes", "utilities"]
 
 [project.urls]
