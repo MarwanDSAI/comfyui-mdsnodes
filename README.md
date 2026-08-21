@@ -27,13 +27,20 @@ configures and routes checkpoint, steps, refiner steps, CFG, sampler algorithm, 
 
   <img src="images/Node_Central parameter hub.png" alt="Central parameter hub" width="250">
 
+  - **Load Checkpoint Hub Pro**
+Central parameter hub that loads a checkpoint and routes MODEL, CLIP, VAE, steps, refiner steps, CFG, sampler algorithm, scheduler curve, denoise values, positive/negative prompts, and metadata across workflows.
+
+  <img src="images/Node_LoadCheckpointHubPro.png" alt="Central parameter hub" width="250">
+
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
 
-## How To Install?
+## Installation
 Install via ComfyUI Node Manager: Search `ComfyUI-MDSNodes` in ComfyUI Node Manager and click Install button.
 
 ## Version History
 __v1.0.3__ first puplic release
 
 __v1.0.9__  Node Added: Top Upscale Models Selector (Auto-DL), Select Diffusion Model, Load Image (With Path),Central parameter hub
+
+__v1.0.13__  Node Added: Load Checkpoint Hub Pro
