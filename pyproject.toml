@@ -1,11 +1,10 @@
 [project]
 name = "comfyui-mdsnodes"
-version = "1.1.1"
+version = "1.0.40"
 description = "A collection of lightweight utility nodes for workflow automation and model routing."
 readme = "README.md"
 license = { text = "MIT" }
 dependencies = []
-keywords = ["comfyui", "custom-nodes", "utilities"]
 
 [project.urls]
 Repository = "https://github.com/MarwanDSAI/comfyui-mdsnodes"
