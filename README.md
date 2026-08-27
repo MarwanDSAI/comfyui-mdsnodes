@@ -45,4 +45,4 @@ __v1.0.9__  Node Added: Top Upscale Models Selector (Auto-DL), Select Diffusion 
 
 __v1.0.14__  Node Added: Load Checkpoint Hub Pro, Load Diffusion Model Hub Pro
 
-__v1.1.00__  Node Added: Merge Two Strings,Convert to String
+__v1.1.0__  Node Added: Merge Two Strings,Convert to String
