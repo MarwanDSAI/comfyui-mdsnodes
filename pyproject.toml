@@ -1,14 +1,19 @@
 [project]
 name = "comfyui-mdsnodes"
-version = "1.1.0"
+version = "1.2.0"
 description = "A collection of lightweight utility nodes for workflow automation and model routing."
 readme = "README.md"
-license = {text = "MIT"}
+license = { file = "LICENSE" }
+classifiers = [
+    "Operating System :: OS Independent"  # Works on all operating systems
+]
+    
 
 [project.urls]
 Repository = "https://github.com/MarwanDSAI/comfyui-mdsnodes"
+Documentation = "https://github.com/MarwanDSAI/comfyui-mdsnodes/blob/main/README.md"
+#  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
 PublisherId = "marwandsai"
-DisplayName = "ComfyUI-MDSNodes"
 Icon = "https://raw.githubusercontent.com/MarwanDSAI/comfyui-mdsnodes/main/images/logo.svg"
