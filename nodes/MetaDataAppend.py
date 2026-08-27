@@ -41,7 +41,7 @@ class MarMetaDataAppend:
         k_str = str(key) if key is not None else ""
 
         # Construct the requested addition formatting
-        addition = f"; {k_str} [{val_str} ]"
+        addition = f"; {k_str} [{val_str}]"
 
         # Add delimiter only if the base string contains text to keep things clean
         if in_str:
