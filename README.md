@@ -27,10 +27,8 @@ configures and routes checkpoint, steps, refiner steps, CFG, sampler algorithm, 
 
   <img src="images/Node_Central parameter hub.png" alt="Central parameter hub" width="250">
 
-- **Load Checkpoint Hub Pro**
+- [**Load Checkpoint Hub Pro**](https://github.com/MarwanDSAI/comfyui-mdsnodes/blob/main/web/docs/MarLoadCheckpointHubPro.md)
 Central parameter hub that loads a checkpoint and routes MODEL, CLIP, VAE, steps, refiner steps, CFG, sampler algorithm, scheduler curve, denoise values, positive/negative prompts, and metadata across workflows.
-
-  <img src="images/Node_LoadCheckpointHubPro.png" alt="Central parameter hub" width="250">
 
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
