@@ -1,7 +1,7 @@
-# Marwan ComfyUI Custom Nodes
+# ComfyUI-MDSNodes
 # -----------------------------------------------------------
 import logging
-version_code = [1, 1, 1]
+version_code = [1, 1, 2]
 version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if len(version_code) > 2 else '')
 logging.info(f"Loading: ComfyUI-MDSNodes ({version_str})")
 # -----------------------------------------------------------
@@ -49,6 +49,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MarCStr": "Convert to String",
     "MarMetaDataAppend": "Metadata Append",
 }
-# -------------------------------------------------------
+# -----------------------------------------------------------
+WEB_DIRECTORY = "./web"
+# -----------------------------------------------------------
 # Expose the mappings so ComfyUI can register the nodes upon server startup
-__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
+__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS", "WEB_DIRECTORY"]
