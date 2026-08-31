@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-mdsnodes"
-version = "1.2.0"
+version = "1.2.1"
 description = "A collection of lightweight utility nodes for workflow automation and model routing."
 readme = "README.md"
 license = { file = "LICENSE" }
