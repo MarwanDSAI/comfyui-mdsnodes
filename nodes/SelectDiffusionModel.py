@@ -32,17 +32,3 @@ class MarSelectDiffusionModel:
 
     def get_name(self, unet_name):
         return (unet_name, unet_name)
-
-
-# -------------------------------------------------------
-# Node Registration
-# -------------------------------------------------------
-NODE_CLASS_MAPPINGS = {
-    "MarSelectDiffusionModel": MarSelectDiffusionModel
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "MarSelectDiffusionModel": "Select Diffusion Model"
-}
-
-__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]

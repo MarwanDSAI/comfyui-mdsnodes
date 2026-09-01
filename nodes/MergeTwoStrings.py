@@ -51,15 +51,3 @@ class MarMergeTwoStrings:
             result = ""
 
         return (result,)
-
-
-# -------------------------------------------------------
-# Node Registration Mappings
-# -------------------------------------------------------
-NODE_CLASS_MAPPINGS = {
-    "MarMergeTwoStrings": MarMergeTwoStrings
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "MarMergeTwoStrings": "Merge Two Strings"
-}

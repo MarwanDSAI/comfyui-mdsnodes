@@ -155,13 +155,3 @@ class MarLoadDiffusionHubPro:
             str(negative_prompt),
             str(metadata),
         )
-
-
-# Registration Mappings
-NODE_CLASS_MAPPINGS = {
-    "MarLoadDiffusionHubPro": MarLoadDiffusionHubPro
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "MarLoadDiffusionHubPro": "Load Diffusion Model Hub Pro"
-}

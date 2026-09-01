@@ -23,13 +23,3 @@ class MarCStr:
         if any_input is None:
             return ("",)
         return (str(any_input),)
-
-
-# Registration Mappings
-NODE_CLASS_MAPPINGS = {
-    "MarCStr": MarCStr
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "MarCStr": "Convert to String"
-}

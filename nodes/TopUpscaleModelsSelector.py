@@ -1,7 +1,6 @@
 # Marwan Custom Nodes
 # Top Upscale Models Selector with Auto-Download & Status. to be connected to the model_name of the Load Upscale Model
 # --------------------------------------------------------------
-
 import os
 import re
 import urllib.request
@@ -148,12 +147,3 @@ class MarTopUpscaleModelsSelector:
             "ui": {"text": [status_text]},
             "result": (clean_model_name,)
         }
-
-
-NODE_CLASS_MAPPINGS = {
-    "MarTopUpscaleModelsSelector": MarTopUpscaleModelsSelector
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "MarTopUpscaleModelsSelector": "Top Upscale Models Selector (Auto-DL)"
-}

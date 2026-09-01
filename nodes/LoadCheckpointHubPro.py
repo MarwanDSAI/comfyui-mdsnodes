@@ -167,13 +167,3 @@ class MarLoadCheckpointHubPro:
             str(negative_prompt),
             str(metadata),
         )
-
-
-# Registration Mappings
-NODE_CLASS_MAPPINGS = {
-    "MarLoadCheckpointHubPro": MarLoadCheckpointHubPro
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "MarLoadCheckpointHubPro": "Load Checkpoint Hub Pro"
-}

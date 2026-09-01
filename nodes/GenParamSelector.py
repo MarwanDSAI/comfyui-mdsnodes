@@ -111,13 +111,3 @@ class MarGenParamSelector:
             str(sampler_name),
             str(scheduler),
         )
-
-
-# Registration Mappings
-NODE_CLASS_MAPPINGS = {
-    "MarGenParamSelector": MarGenParamSelector
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "MarGenParamSelector": "Generation Parameters Hub"
-}

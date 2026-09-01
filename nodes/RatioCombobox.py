@@ -1,4 +1,5 @@
 # Marwan Custom Nodes
+# Provides an easy way to select from predefined aspect ratios or scaling percentages and output them as a float.
 # -------------------------------------------------------
 class MarRatioCombobox:
     # Main Node Description (Shows in search dialog and "Node Info" panel)

@@ -141,12 +141,3 @@ class MarLoadImageWithPath:
         except Exception:
             pass
         return ""
-
-
-NODE_CLASS_MAPPINGS = {
-    "MarLoadImageWithPath": MarLoadImageWithPath
-}
-
-NODE_DISPLAY_NAME_MAPPINGS = {
-    "MarLoadImageWithPath": "Load Image (With Path)"
-}
