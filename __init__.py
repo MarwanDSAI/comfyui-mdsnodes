@@ -1,7 +1,7 @@
 # ComfyUI-MDSNodes
 # -----------------------------------------------------------
 import logging
-version_code = [1, 2, 1]
+version_code = [1, 3, 0]
 version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if len(version_code) > 2 else '')
 logging.info(f"Loading: ComfyUI-MDSNodes ({version_str})")
 # -----------------------------------------------------------
@@ -14,9 +14,12 @@ from .nodes.TopUpscaleModelsSelector import MarTopUpscaleModelsSelector
 from .nodes.GenParamSelector import MarGenParamSelector
 from .nodes.LoadCheckpointHubPro import MarLoadCheckpointHubPro
 from .nodes.LoadDiffusionHubPro import MarLoadDiffusionHubPro
-from .nodes.MergeTwoStrings import MarMergeTwoStrings  # Added 8/25/26
-from .nodes.CStr import MarCStr  # Added 8/25/26
-from .nodes.MetaDataAppend import MarMetaDataAppend  # Added 8/26/26
+from .nodes.MergeTwoStrings import MarMergeTwoStrings               # Added 8/25/26 v1.1.0
+from .nodes.CStr import MarCStr                                     # Added 8/25/26 v1.1.0
+from .nodes.MetaDataAppend import MarMetaDataAppend                 # Added 8/26/26 v1.3.0
+from .nodes.MetaDataExtract import MarMetaDataExtract               # Added 8/31/26 v1.3.0
+from .nodes.MetaDataToJSON import MarMetaDataToJSON                 # Added 8/31/26 v1.3.0
+from .nodes.UnloadAllModels import MarUnloadAllModels               # Added 8/31/26 v1.3.0
 # -----------------------------------------------------------
 # Map internal unique string IDs to Python classes
 NODE_CLASS_MAPPINGS = {
@@ -32,6 +35,9 @@ NODE_CLASS_MAPPINGS = {
     "MarMergeTwoStrings": MarMergeTwoStrings,
     "MarCStr": MarCStr,
     "MarMetaDataAppend": MarMetaDataAppend,
+    "MarMetaDataExtract": MarMetaDataExtract,
+    "MarMetaDataToJSON": MarMetaDataToJSON,
+    "MarUnloadAllModels": MarUnloadAllModels,
 }
 # -----------------------------------------------------------
 # Map internal string IDs to the friendly titles shown on the canvas
@@ -48,8 +54,12 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MarMergeTwoStrings": "Merge Two Strings",
     "MarCStr": "Convert to String",
     "MarMetaDataAppend": "Metadata Append",
+    "MarMetaDataExtract": "MetaData Extract",
+    "MarMetaDataToJSON": "MetaData Convert to EXTRA_METADATA",
+    "MarUnloadAllModels": "Unload All Models",
 }
 # -----------------------------------------------------------
+# Points ComfyUI to frontend folder 
 WEB_DIRECTORY = "./web"
 # -----------------------------------------------------------
 # Expose the mappings so ComfyUI can register the nodes upon server startup
