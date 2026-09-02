@@ -1,9 +1,9 @@
 # ComfyUI-MDSNodes
 # -----------------------------------------------------------
 import logging
-version_code = [1, 3, 0]
+version_code = [1, 3, 1]
 version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if len(version_code) > 2 else '')
-logging.info(f"Loading: ComfyUI-MDSNodes ({version_str})")
+logging.info(f"### Loading: ComfyUI-MDSNodes ({version_str})")
 # -----------------------------------------------------------
 from .nodes.UNetNameToCKPTName import MarUNetNameToCKPTName
 from .nodes.ControlNetSelect import MarControlNetSelect
@@ -37,7 +37,7 @@ NODE_CLASS_MAPPINGS = {
     "MarMetaDataAppend": MarMetaDataAppend,
     "MarMetaDataExtract": MarMetaDataExtract,
     "MarMetaDataToJSON": MarMetaDataToJSON,
-    "MarUnloadAllModels": MarUnloadAllModels,
+    "MarUnloadAllModels": MarUnloadAllModels
 }
 # -----------------------------------------------------------
 # Map internal string IDs to the friendly titles shown on the canvas
@@ -56,11 +56,11 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MarMetaDataAppend": "Metadata Append",
     "MarMetaDataExtract": "MetaData Extract",
     "MarMetaDataToJSON": "MetaData Convert to EXTRA_METADATA",
-    "MarUnloadAllModels": "Unload All Models",
+    "MarUnloadAllModels": "Unload All Models"
 }
 # -----------------------------------------------------------
 # Points ComfyUI to frontend folder 
 WEB_DIRECTORY = "./web"
 # -----------------------------------------------------------
 # Expose the mappings so ComfyUI can register the nodes upon server startup
-__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS", "WEB_DIRECTORY"]
+__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS', 'WEB_DIRECTORY']
