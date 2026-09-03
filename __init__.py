@@ -1,25 +1,27 @@
 # ComfyUI-MDSNodes
 # -----------------------------------------------------------
 import logging
-version_code = [1, 3, 1]
-version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if len(version_code) > 2 else '')
-logging.info(f"### Loading: ComfyUI-MDSNodes ({version_str})")
+#version_code = [1, 4, 0]
+#version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if #len(version_code) > 2 else '')
+#logging.info(f"### Loading: ComfyUI-MDSNodes ({version_str})")
 # -----------------------------------------------------------
 from .nodes.UNetNameToCKPTName import MarUNetNameToCKPTName
 from .nodes.ControlNetSelect import MarControlNetSelect
 from .nodes.RatioCombobox import MarRatioCombobox
-from .nodes.LoadImageWithPath import MarLoadImageWithPath
-from .nodes.SelectDiffusionModel import MarSelectDiffusionModel
-from .nodes.TopUpscaleModelsSelector import MarTopUpscaleModelsSelector
-from .nodes.GenParamSelector import MarGenParamSelector
-from .nodes.LoadCheckpointHubPro import MarLoadCheckpointHubPro
-from .nodes.LoadDiffusionHubPro import MarLoadDiffusionHubPro
-from .nodes.MergeTwoStrings import MarMergeTwoStrings               # Added 8/25/26 v1.1.0
-from .nodes.CStr import MarCStr                                     # Added 8/25/26 v1.1.0
-from .nodes.MetaDataAppend import MarMetaDataAppend                 # Added 8/26/26 v1.3.0
-from .nodes.MetaDataExtract import MarMetaDataExtract               # Added 8/31/26 v1.3.0
-from .nodes.MetaDataToJSON import MarMetaDataToJSON                 # Added 8/31/26 v1.3.0
-from .nodes.UnloadAllModels import MarUnloadAllModels               # Added 8/31/26 v1.3.0
+from .nodes.LoadImageWithPath import MarLoadImageWithPath               # Added v1.0.9 8/18/26
+from .nodes.SelectDiffusionModel import MarSelectDiffusionModel         # Added v1.0.9
+from .nodes.TopUpscaleModelsSelector import MarTopUpscaleModelsSelector # Added v1.0.9
+from .nodes.GenParamSelector import MarGenParamSelector                 # Added v1.0.9
+from .nodes.LoadCheckpointHubPro import MarLoadCheckpointHubPro         # Added v1.0.14 8/23/26 
+from .nodes.LoadDiffusionHubPro import MarLoadDiffusionHubPro           # Added v1.0.14
+from .nodes.MergeTwoStrings import MarMergeTwoStrings                   # Added v1.1.0 8/25/26 
+from .nodes.CStr import MarCStr                                         # Added v1.1.0
+from .nodes.MetaDataAppend import MarMetaDataAppend                     # Added v1.3.0 8/26/26 # Changed value to textbox 9/3/26 v1.4.0
+from .nodes.MetaDataExtract import MarMetaDataExtract                   # Added v1.3.0
+from .nodes.MetaDataToJSON import MarMetaDataToJSON                     # Added v1.3.0
+from .nodes.UnloadAllModels import MarUnloadAllModels                   # Added v1.3.0
+from .nodes.UMTWComboCustomPromptSelector import MarUMTWComboCustomPromptSelector # Added v1.5.0 9/03/26 
+
 # -----------------------------------------------------------
 # Map internal unique string IDs to Python classes
 NODE_CLASS_MAPPINGS = {
@@ -37,7 +39,8 @@ NODE_CLASS_MAPPINGS = {
     "MarMetaDataAppend": MarMetaDataAppend,
     "MarMetaDataExtract": MarMetaDataExtract,
     "MarMetaDataToJSON": MarMetaDataToJSON,
-    "MarUnloadAllModels": MarUnloadAllModels
+    "MarUnloadAllModels": MarUnloadAllModels,
+    "MarUMTWComboCustomPromptSelector": MarUMTWComboCustomPromptSelector,
 }
 # -----------------------------------------------------------
 # Map internal string IDs to the friendly titles shown on the canvas
@@ -56,7 +59,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MarMetaDataAppend": "Metadata Append",
     "MarMetaDataExtract": "MetaData Extract",
     "MarMetaDataToJSON": "MetaData Convert to EXTRA_METADATA",
-    "MarUnloadAllModels": "Unload All Models"
+    "MarUnloadAllModels": "Unload All Models",
+    "MarUMTWComboCustomPromptSelector": "UMTW Custom Prompt Selector",
 }
 # -----------------------------------------------------------
 # Points ComfyUI to frontend folder 
