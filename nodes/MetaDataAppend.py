@@ -14,16 +14,19 @@ class MarMetaDataAppend:
                     "forceInput": True,
                     "tooltip": "The original base string. If disconnected, treated as empty."
                 }),
-                # Wildcard type "*" allows connection from any node output slot (INT, FLOAT, STRING, etc.)
-                "value": ("*", {
-                    "tooltip": "The dynamic value to insert inside the brackets. Accepts any data type."
-                }),
-                # Multiline set to False creates a simple single-line text entry box for the key
+                # Single-line textbox entry for the key
                 "key": ("STRING", {
                     "default": "my_key", 
                     "multiline": False,
                     "tooltip": "The key name you type into the textbox."
                 }),
+                # Single-line textbox entry for the value
+                "value": ("STRING", {
+                    "default": "",
+                    "multiline": False,
+                    "tooltip": "The single-line text value to insert inside the brackets."
+                }),
+
             }
         }
 
@@ -34,7 +37,7 @@ class MarMetaDataAppend:
     FUNCTION = "append_data"
     CATEGORY = "MDSNodes/text"
 
-    def append_data(self, metadata=None, value=None, key=""):
+    def append_data(self, metadata=None, value="", key=""):
         # Safely treat None or missing inputs as empty strings
         in_str = str(metadata).strip() if metadata is not None else ""
         val_str = str(value) if value is not None else ""
@@ -47,6 +50,6 @@ class MarMetaDataAppend:
         if in_str:
             result = f"{in_str}{addition}"
         else:
-            result = f"{k_str} [{val_str} ]"
+            result = f"{k_str} [{val_str}]"
 
         return (result,)
