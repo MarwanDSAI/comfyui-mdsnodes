@@ -13,7 +13,7 @@ class MarUMTWComboCustomPromptSelector:
             "5: Gym Overhead Portrait","6: Women garden  relax time", 
             "7: Confident Curvy Woman in in Black", "8: Daenerys with Dragon", 
             "9: Snowy Peak Reverie", "10: Lakeside Terrace Elegance",
-            "11: Egypt Desert Goddess",
+            "11: Egypt Desert Goddess","12: Lara Croft",
 
         ]
 
