@@ -1,0 +1,7 @@
+# Python bytecode cache (covers root, nodes/, and all subfolders)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# GitHub Actions & repo workflow configuration
+.github/
