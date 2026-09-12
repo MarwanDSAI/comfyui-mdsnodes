@@ -5,9 +5,9 @@ import logging
 #version_str = f"V{version_code[0]}.{version_code[1]}" + (f'.{version_code[2]}' if #len(version_code) > 2 else '')
 #logging.info(f"### Loading: ComfyUI-MDSNodes ({version_str})")
 # -----------------------------------------------------------
+from .nodes.RatioCombobox import MarRatioCombobox                       # First Node
 from .nodes.UNetNameToCKPTName import MarUNetNameToCKPTName
 from .nodes.ControlNetSelect import MarControlNetSelect
-from .nodes.RatioCombobox import MarRatioCombobox
 from .nodes.LoadImageWithPath import MarLoadImageWithPath               # Added v1.0.9 8/18/26
 from .nodes.SelectDiffusionModel import MarSelectDiffusionModel         # Added v1.0.9
 from .nodes.TopUpscaleModelsSelector import MarTopUpscaleModelsSelector # Added v1.0.9
@@ -21,6 +21,9 @@ from .nodes.MetaDataExtract import MarMetaDataExtract                   # Added 
 from .nodes.MetaDataToJSON import MarMetaDataToJSON                     # Added v1.3.0
 from .nodes.UnloadAllModels import MarUnloadAllModels                   # Added v1.3.0
 from .nodes.UMTWComboCustomPromptSelector import MarUMTWComboCustomPromptSelector # Added v1.5.0 9/03/26 
+from .nodes.ModelShortHashExtractor import MarModelShortHashExtractor   # Added v1.6.0 9/03/26 
+from .nodes.MetaDataCheckKeyValue import MarMetaDataCheckKeyValue       # Added v1.7.0 9/07/26 
+from .nodes.IntSwitch import MarIntSwitch                               # Added v1.7.0 9/07/26 
 
 # -----------------------------------------------------------
 # Map internal unique string IDs to Python classes
@@ -41,6 +44,9 @@ NODE_CLASS_MAPPINGS = {
     "MarMetaDataToJSON": MarMetaDataToJSON,
     "MarUnloadAllModels": MarUnloadAllModels,
     "MarUMTWComboCustomPromptSelector": MarUMTWComboCustomPromptSelector,
+    "MarModelShortHashExtractor": MarModelShortHashExtractor,
+    "MarMetaDataCheckKeyValue": MarMetaDataCheckKeyValue,
+    "MarIntSwitch": MarIntSwitch,
 }
 # -----------------------------------------------------------
 # Map internal string IDs to the friendly titles shown on the canvas
@@ -61,6 +67,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MarMetaDataToJSON": "MetaData Convert to EXTRA_METADATA",
     "MarUnloadAllModels": "Unload All Models",
     "MarUMTWComboCustomPromptSelector": "UMTW Custom Prompt Selector",
+    "MarModelShortHashExtractor": "Model Short Hash Extractor",
+    "MarMetaDataCheckKeyValue": "MetaData Check Key & Value",
+    "MarIntSwitch": "Integer Switch",
+  
 }
 # -----------------------------------------------------------
 # Points ComfyUI to frontend folder 
