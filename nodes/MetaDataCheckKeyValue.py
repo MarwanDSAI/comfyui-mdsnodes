@@ -36,7 +36,7 @@ class MarMetaDataCheckKeyValue:
     OUTPUT_TOOLTIPS = ("True if both the key and the exact value match, False otherwise.",)
     
     FUNCTION = "check_pair"
-    CATEGORY = "MDSNodes/text"
+    CATEGORY = "MDSNodes/MetaData"
 
     def check_pair(self, metadata=None, key="", value=""):
         # Safely treat None or missing inputs as empty strings

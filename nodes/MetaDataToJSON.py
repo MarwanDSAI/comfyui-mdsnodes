@@ -23,7 +23,7 @@ class MarMetaDataToJSON:
     OUTPUT_TOOLTIPS = ("The metadata formatted as a dictionary/mapping.",)
     
     FUNCTION = "convert"
-    CATEGORY = "MDSNodes/text"
+    CATEGORY = "MDSNodes/MetaData"
 
     def convert(self, metadata=""):
         # Safely treat None or missing inputs as empty strings

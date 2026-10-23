@@ -30,7 +30,7 @@ class MarMetaDataExtract:
     OUTPUT_TOOLTIPS = ("The extracted value string.", "True if the key was found, False otherwise.")
     
     FUNCTION = "extract_data"
-    CATEGORY = "MDSNodes/text"
+    CATEGORY = "MDSNodes/MetaData"
 
     def extract_data(self, metadata=None, key=""):
         # Safely treat None or missing inputs as empty strings

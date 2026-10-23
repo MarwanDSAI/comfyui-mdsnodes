@@ -1,10 +1,13 @@
 # Marwan Custom Nodes
 # Central parameter hub that loads a checkpoint and routes MODEL, CLIP, VAE, 
 # sampling settings, prompts, and metadata across workflows.
+# Updated v1.8.0 9/15/26 to include hashtag
 # --------------------------------------------------------------
 import folder_paths
 import comfy.sd
 import comfy.samplers
+import hashlib
+import os
 
 class MarLoadCheckpointHubPro:
     DESCRIPTION = "Central parameter hub that loads a checkpoint and routes MODEL, CLIP, VAE, steps, refiner steps, CFG, sampler algorithm, scheduler curve, denoise values, positive/negative prompts, and metadata across workflows."
@@ -119,7 +122,7 @@ class MarLoadCheckpointHubPro:
         "Denoise strength multiplier (FLOAT).",
         "Positive prompt string (connect to CLIP Text Encode).",
         "Negative prompt string (connect to CLIP Text Encode).",
-        "Passthrough metadata string.",
+        "Passthrough metadata string with injected model hash.",
     )
 
     FUNCTION = "load_and_get_params"
@@ -140,6 +143,36 @@ class MarLoadCheckpointHubPro:
     ):
         # Resolve full path and load checkpoint components
         ckpt_path = folder_paths.get_full_path("checkpoints", ckpt_name)
+        
+        # ---------------------------------------------------------
+        # Hash Calculation Logic (Civitai AutoV2 Format)
+        # ---------------------------------------------------------
+        calculated_hash = ""
+        if ckpt_path and os.path.exists(ckpt_path):
+            sha256 = hashlib.sha256()
+            try:
+                with open(ckpt_path, "rb") as f:
+                    # Read the entire file in 4MB chunks to prevent memory crashes
+                    for chunk in iter(lambda: f.read(4194304), b""):
+                        sha256.update(chunk)
+                
+                # Civitai AutoV2 format uses the first 10 characters of the full SHA256
+                calculated_hash = sha256.hexdigest()[:10]
+            except Exception as e:
+                print(f"[LoadCheckpointHubPro] Error calculating model hash: {str(e)}")
+
+        # Construct the requested metadata formatting
+        base_meta = str(metadata).strip() if metadata else ""
+        hash_injection = f"Model hash [{calculated_hash}]" if calculated_hash else ""
+        
+        if base_meta and hash_injection:
+            final_metadata = f"{base_meta}; {hash_injection}"
+        elif hash_injection:
+            final_metadata = hash_injection
+        else:
+            final_metadata = base_meta
+        # ---------------------------------------------------------
+
         out = comfy.sd.load_checkpoint_guess_config(
             ckpt_path, 
             output_vae=True, 
@@ -165,5 +198,5 @@ class MarLoadCheckpointHubPro:
             denoise,
             str(positive_prompt),
             str(negative_prompt),
-            str(metadata),
+            final_metadata,
         )

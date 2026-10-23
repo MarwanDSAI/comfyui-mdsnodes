@@ -1,5 +1,5 @@
 # Marwan Custom Nodes
-# Merge Two Strings
+# Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as empty string.
 # -------------------------------------------------------
 class MarMergeTwoStrings:
     DESCRIPTION = "Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as empty string."

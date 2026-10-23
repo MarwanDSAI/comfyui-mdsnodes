@@ -1,11 +1,12 @@
 # Marwan Custom Nodes
+# Calculates a 10-character short hash (Civitai AutoV2 Format) from a checkpoint or diffusion model filename.
 # -------------------------------------------------------
 import hashlib
 import os
 import folder_paths
 
 class MarModelShortHashExtractor:
-    DESCRIPTION = "Calculates a 10-character short hash from a checkpoint or diffusion model filename."
+    DESCRIPTION = "Calculates a 10-character short hash (Civitai AutoV2 Format) from a checkpoint or diffusion model filename."
 
     @classmethod
     def INPUT_TYPES(cls):
