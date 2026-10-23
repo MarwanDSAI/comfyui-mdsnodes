@@ -33,11 +33,16 @@ the following custom nodes was build to use with The Ultimate Model Tester Workf
 
   <img src="images/Node_LoadCheckpointHubPro.png" alt="Central parameter hub" width="250">
 
-- **Strings Nodes:**
+- **Text Conversion & Key-Value Lookup Nodes:**
   
   **Merge Two Strings**: Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as an empty string.
   
   **Convert to String**: Converts any incoming data type safely into a standard string.
+
+  **String Replace (Multiple) / String Replace**
+
+  **String Selector by Key (8 Strings)**
+  
 
 - **MetaData Nodes:**
 
