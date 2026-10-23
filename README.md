@@ -40,14 +40,16 @@ the following custom nodes was build to use with The Ultimate Model Tester Workf
   **Convert to String**: Converts any incoming data type safely into a standard string.
 
 - **MetaData Nodes:**
+
+  metadata structure is a string formatted to hold multiple keys and values as follows: Key1 [Value1]; Key2 [Value2]; Key3 [Value3];...
   
-  **MetaData Append**: Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as an empty string.
+  **MetaData Append**: Appends a key and value to metadata
   
-  **MetaData Remove**: Converts any incoming data type safely into a standard string.
+  **MetaData Remove**: Removes a key from MetaData
   
-  **MetaData Extract**: Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as an empty string.
+  **MetaData Extract**: Extracts a value from appended metadata based on a specific key
   
-  **MetaData Convert to EXTRA_METADATA**: Converts any incoming data type safely into a standard string.
+  **MetaData Convert to EXTRA_METADATA**: Converts MetaData with structure Key1 [Value1]; Key2 [Value2]; Key3 [Value3];... into a mapping/dict for EXTRA_METADATA
   
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
