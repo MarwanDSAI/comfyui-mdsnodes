@@ -23,18 +23,34 @@ the following custom nodes was build to use with The Ultimate Model Tester Workf
   Dropdown of common percentage presets (10%, 25%, 50%, 100%) converted directly into decimal FLOAT values (e.g., 0.5).
 
 - **Central parameter hub**
-  configures and routes checkpoint, steps, refiner steps, CFG, sampler algorithm, scheduler curve, and denoise values across workflows.
+  Configures and routes checkpoint, steps, refiner steps, CFG, sampler algorithm, scheduler curve, and denoise values across workflows.
 
   <img src="images/Node_Central parameter hub.png" alt="Central parameter hub" width="250">
 
-- **Load Checkpoint Hub Pro**
+- **Load Checkpoint Hub Pro and Load Diffusion Model Hub Pro**
 
-  Central parameter hub that loads a checkpoint and routes MODEL, CLIP, VAE, steps, refiner steps, CFG, sampler algorithm, scheduler curve, denoise values, positive/negative prompts, and metadata across workflows.
+  Central parameter hub that loads a checkpoint/Diffusion Model and routes MODEL, CLIP, VAE, steps, refiner steps, CFG, sampler algorithm, scheduler curve, denoise values, positive/negative prompts, and metadata across workflows. Also, the model AutoV2 hash (used by Civitai) will be added to the metadata 
 
   <img src="images/Node_LoadCheckpointHubPro.png" alt="Central parameter hub" width="250">
 
+- **Strings Nodes:**
+  
+  **Merge Two Strings**: Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as an empty string.
+  
+  **Convert to String**: Converts any incoming data type safely into a standard string.
+
+- **MetaData Nodes:**
+  
+  **MetaData Append**: Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as an empty string.
+  
+  **MetaData Remove**: Converts any incoming data type safely into a standard string.
+  
+  **MetaData Extract**: Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as an empty string.
+  
+  **MetaData Convert to EXTRA_METADATA**: Converts any incoming data type safely into a standard string.
+  
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
 
 ## Installation
-Install via ComfyUI Node Manager: Search `ComfyUI-MDSNodes` in ComfyUI Node Manager and click Install button.
+Install via ComfyUI Node Manager: Search `ComfyUI-MDSNodes` in ComfyUI Node Manager and click the Install button.
