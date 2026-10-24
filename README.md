@@ -39,7 +39,9 @@ the following custom nodes was build to use with The Ultimate Model Tester Workf
   
   **Convert to String**: Converts any incoming data type safely into a standard string.
 
-  **String Replace (Multiple) / String Replace**
+  **String Replace (Multiple) / String Replace**: Performs up to 1 or 8 sequential search and replace operations on a main text string.
+
+  <img src="images/Node_MarStrReplaceMultiple.png" alt="String Replace (Multiple)" width="250">
 
   **String Selector by Key (8 Strings)**
   
