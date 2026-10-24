@@ -1,6 +1,6 @@
 ## ComfyUI-MDSNodes
 
-the following custom nodes was build to use with The Ultimate Model Tester Workflow [civitai link](https://civitai.com/articles/33496/the-ultimate-model-tester-workflow) . They may also be useful for your own workflows.
+The following custom nodes were built to use with The Ultimate Model Tester Workflow [Civitai link](https://civitai.com/articles/33496/the-ultimate-model-tester-workflow). They may also be useful for your own workflows.
 
 ## Nodes
 
