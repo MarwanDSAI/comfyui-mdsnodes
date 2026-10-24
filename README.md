@@ -39,12 +39,13 @@ The following custom nodes were built to use with The Ultimate Model Tester Work
   
   **Convert to String**: Converts any incoming data type safely into a standard string.
 
-  **String Replace (Multiple) / String Replace**: Performs up to 1 or 8 sequential search and replace operations on a main text string.
+  **String Replace (Multiple) / String Replace:** Performs up to 1 or 8 sequential search and replace operations on a main text string.
 
   <img src="images/Node_MarStrReplaceMultiple.png" alt="String Replace (Multiple)" width="250">
 
-  **String Selector by Key (8 Strings)**
+  **String Selector by Key (8 Strings):** Look up a Key and return a value from up to 8 key/value slots.
   
+  <img src="images/Node_MarKeyValueSelector8.png" alt="String Selector by Key (8 Strings)" width="250">
 
 - **MetaData Nodes:**
 
