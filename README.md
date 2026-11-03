@@ -1,6 +1,6 @@
 ## ComfyUI-MDSNodes
 
-The following custom nodes were built to use with The Ultimate Model Tester Workflow [Civitai link](https://civitai.com/articles/33496/the-ultimate-model-tester-workflow). They may also be useful for your own workflows.
+These custom nodes were built to work with The Ultimate Model Tester Workflow [Civitai link](https://civitai.com/articles/33496/the-ultimate-model-tester-workflow). They may also be useful for your own workflows.
 
 ## Nodes
 
@@ -57,12 +57,26 @@ The following custom nodes were built to use with The Ultimate Model Tester Work
   
   **MetaData Extract**: Extracts a value from appended metadata based on a specific key
   
-  **MetaData Convert to EXTRA_METADATA**: Converts Current MetaData  structure into a mapping/dict for EXTRA_METADATA
+  **MetaData Convert to EXTRA_METADATA**: Converts the current metadata structure into a mapping/dict for EXTRA_METADATA
 
   **MetaData Append (Switch)**: Appends MetaData; chosen the value based on a toggle switch. Skips appending if the value is empty
   
   **MetaData Check Key & Value**: Checks if a specific key and value pair exists in the metadata string.
 
+- **Switch Nodes:**
+
+  These nodes allow you to dynamically toggle between two inputs (strings, multiline prompts, integers, floats, and model pipelines) using simple boolean switches
+  
+  **Integer Switch**
+  
+  **String Switch**
+
+  **String Switch (Multiline)**: Routes complex text
+  
+  **Float Switch (2 decimal)**: Switches between two floating-point numbers with high precision and step controls.
+  
+  **Model Switch**
+  
   
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
