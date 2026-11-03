@@ -51,17 +51,12 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
 
   metadata structure is a string formatted to hold multiple keys and values as follows: Key1 [Value1]; Key2 [Value2]; Key3 [Value3];...
   
-  **MetaData Append**: Appends a key and value to metadata
-  
-  **MetaData Remove**: Removes a key from MetaData
-  
-  **MetaData Extract**: Extracts a value from appended metadata based on a specific key
-  
-  **MetaData Convert to EXTRA_METADATA**: Converts the current metadata structure into a mapping/dict for EXTRA_METADATA
-
-  **MetaData Append (Switch)**: Appends MetaData; chosen the value based on a toggle switch. Skips appending if the value is empty
-  
-  **MetaData Check Key & Value**: Checks if a specific key and value pair exists in the metadata string.
+  - **MetaData Append**: Appends a key and value to metadata  
+  - **MetaData Remove**: Removes a key from MetaData  
+  - **MetaData Extract**: Extracts a value from appended metadata based on a specific key  
+  - **MetaData Convert to EXTRA_METADATA**: Converts the current metadata structure into a mapping/dict for EXTRA_METADATA
+  - **MetaData Append (Switch)**: Appends MetaData; chosen the value based on a toggle switch. Skips appending if the value is empty  
+  - **MetaData Check Key & Value**: Checks if a specific key and value pair exists in the metadata string.
 
 ### **Switch Nodes:**
   These nodes allow you to dynamically toggle between two inputs (strings, multiline prompts, integers, floats, and model pipelines) using simple boolean switches
@@ -73,12 +68,9 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   
 ### **Constant & Parameter Nodes:**
     
-  - **Integer** Fixed integer constant
-  
+  - **Integer** Fixed integer constant  
   - **Float (No Dec)** Whole-number float snapped to zero decimal places
-
-  - **Float (1 Dec)/Float (2 Dec)**: Float value with 1 and 2 decimal places
-  
+  - **Float (1 Dec)/Float (2 Dec)**: Float value with 1 and 2 decimal places  
   - **Guide Size / Denoise / Feather Radius/BBox Crop Factor**
   
 ## Requirements
