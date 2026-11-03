@@ -64,17 +64,12 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   **MetaData Check Key & Value**: Checks if a specific key and value pair exists in the metadata string.
 
 ### **Switch Nodes:**
-
   These nodes allow you to dynamically toggle between two inputs (strings, multiline prompts, integers, floats, and model pipelines) using simple boolean switches
-  
   - **Integer Switch**
   - **String Switch**
-
   - **String Switch (Multiline)**: Routes complex text
-  
-  **Float Switch (2 decimal)**: Switches between two floating-point numbers with high precision and step controls.
-  
-  **Model Switch**
+  - **Float Switch (2 decimal)**: Switches between two floating-point numbers with high precision and step controls.
+  - **Model Switch**
   
 ### **Constant & Parameter Nodes:**
     
