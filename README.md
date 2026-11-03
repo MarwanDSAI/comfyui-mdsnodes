@@ -67,11 +67,10 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
 
   These nodes allow you to dynamically toggle between two inputs (strings, multiline prompts, integers, floats, and model pipelines) using simple boolean switches
   
-  **Integer Switch**
-  
-  **String Switch**
+  - **Integer Switch**
+  - **String Switch**
 
-  **String Switch (Multiline)**: Routes complex text
+  - **String Switch (Multiline)**: Routes complex text
   
   **Float Switch (2 decimal)**: Switches between two floating-point numbers with high precision and step controls.
   
