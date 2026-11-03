@@ -47,7 +47,7 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   
   <img src="images/Node_MarKeyValueSelector8.png" alt="String Selector by Key (8 Strings)" width="250">
 
-- **MetaData Nodes:**
+### **MetaData Nodes:**
 
   metadata structure is a string formatted to hold multiple keys and values as follows: Key1 [Value1]; Key2 [Value2]; Key3 [Value3];...
   
@@ -63,7 +63,7 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   
   **MetaData Check Key & Value**: Checks if a specific key and value pair exists in the metadata string.
 
-- ### **Switch Nodes:**
+### **Switch Nodes:**
 
   These nodes allow you to dynamically toggle between two inputs (strings, multiline prompts, integers, floats, and model pipelines) using simple boolean switches
   
@@ -77,7 +77,7 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   
   **Model Switch**
   
-  - **Constants Nodes:**
+### **Constants Nodes:**
     
   **Integer** Fixed integer constant
   
