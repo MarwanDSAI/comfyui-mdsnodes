@@ -57,7 +57,12 @@ The following custom nodes were built to use with The Ultimate Model Tester Work
   
   **MetaData Extract**: Extracts a value from appended metadata based on a specific key
   
-  **MetaData Convert to EXTRA_METADATA**: Converts MetaData with structure Key1 [Value1]; Key2 [Value2]; Key3 [Value3];... into a mapping/dict for EXTRA_METADATA
+  **MetaData Convert to EXTRA_METADATA**: Converts Current MetaData  structure into a mapping/dict for EXTRA_METADATA
+
+  **MetaData Append (Switch)**: Appends MetaData; chosen the value based on a toggle switch. Skips appending if the value is empty
+  
+  **MetaData Check Key & Value**: Checks if a specific key and value pair exists in the metadata string.
+
   
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
