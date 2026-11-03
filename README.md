@@ -77,7 +77,7 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   
   **Model Switch**
   
-### **Constants Nodes:**
+### **Constant & Parameter Nodes:**
     
   - **Integer** Fixed integer constant
   
