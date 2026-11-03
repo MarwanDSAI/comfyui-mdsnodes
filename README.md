@@ -63,7 +63,7 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   
   **MetaData Check Key & Value**: Checks if a specific key and value pair exists in the metadata string.
 
-- **Switch Nodes:**
+- ### **Switch Nodes:**
 
   These nodes allow you to dynamically toggle between two inputs (strings, multiline prompts, integers, floats, and model pipelines) using simple boolean switches
   
@@ -77,6 +77,15 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   
   **Model Switch**
   
+  - **Constants Nodes:**
+    
+  **Integer** Fixed integer constant
+  
+  **Float (No Dec)** Whole-number float snapped to zero decimal places
+
+  **Float (1 Dec)/Float (2 Dec)**: Float value with 1 and 2 decimal places
+  
+  **Guide Size / Denoise / Feather Radius/BBox Crop Factor**
   
 ## Requirements
 No extra packages required. Works out-of-the-box with standard ComfyUI dependencies.
