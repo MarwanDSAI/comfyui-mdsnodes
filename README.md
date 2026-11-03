@@ -49,7 +49,7 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
 
 ### **MetaData Nodes:**
 
-  metadata structure is a string formatted to hold multiple keys and values as follows: Key1 [Value1]; Key2 [Value2]; Key3 [Value3];...
+  Metadata is a string formatted to hold multiple keys and values with structure as follows: Key1 [Value1]; Key2 [Value2]; Key3 [Value3];...
   
   - **MetaData Append**: Appends a key and value to metadata  
   - **MetaData Remove**: Removes a key from MetaData  
