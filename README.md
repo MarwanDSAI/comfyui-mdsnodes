@@ -33,7 +33,7 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
 
   <img src="images/Node_LoadCheckpointHubPro.png" alt="Central parameter hub" width="250">
 
-- **Text Conversion & Key-Value Lookup Nodes:**
+### **Text Conversion & Key-Value Lookup Nodes:**
   
   **Merge Two Strings**: Merges two strings with an optional delimiter if both strings are not empty. Handles None or missing inputs as an empty string.
   
@@ -42,6 +42,8 @@ These custom nodes were built to work with The Ultimate Model Tester Workflow [C
   **String Replace (Multiple) / String Replace:** Performs up to 1 or 8 sequential search and replace operations on a main text string.
 
   <img src="images/Node_MarStrReplaceMultiple.png" alt="String Replace (Multiple)" width="250">
+
+  **Text (Multiline) Dual:** Provides two independent multiline text boxes and outputs both strings.
 
   **String Selector by Key (8 Strings):** Look up a Key and return a value from up to 8 key/value slots.
   
